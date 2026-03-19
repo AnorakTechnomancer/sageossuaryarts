@@ -232,14 +232,20 @@
         </svg>
       </div>
 
-      <a href="#gallery" class="hero-cta">Enter the Gallery</a>
+      <a href="#gallery" class="hero-cta"><span>Enter the Gallery</span></a>
     </div>
+
+    <!-- fade-out at hero bottom — dissolves into page -->
+    <div class="hero-fade"></div>
 
     <div class="hero-scroll-hint">
       <span>scroll</span>
       <div class="scroll-line"></div>
     </div>
   </section>
+
+  <!-- ═══ PAGE BODY — unified canvas beneath all sections ═══ -->
+  <div class="page-body">
 
   <!-- GALLERY -->
   <section class="section gallery-section" id="gallery">
@@ -345,7 +351,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- /gallery -->
+
+  <div class="section-glow" aria-hidden="true"></div>
 
   <!-- ABOUT -->
   <section class="section about-section" id="about">
@@ -465,7 +473,9 @@
         </div>
       </div>
     </div>
-  </section>
+  </section><!-- /about -->
+
+  <div class="section-glow" aria-hidden="true"></div>
 
   <!-- COMMISSION -->
   <section class="section commission-section" id="commission">
@@ -575,7 +585,9 @@
         <span class="commission-status ask">Ask</span>
       </div>
     </div>
-  </section>
+  </section><!-- /commission -->
+
+  <div class="section-glow" aria-hidden="true"></div>
 
   <!-- CONTACT -->
   <section class="section contact-section" id="contact">
@@ -634,7 +646,9 @@
         </a>
       </div>
     </div>
-  </section>
+  </section><!-- /contact -->
+
+  </div><!-- /page-body -->
 
   <!-- FOOTER -->
   <footer class="footer">
