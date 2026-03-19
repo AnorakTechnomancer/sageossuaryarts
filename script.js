@@ -57,10 +57,12 @@ for (let i = 0; i < PARTICLE_COUNT; i++) {
   p.style.animationDelay   = delay + 's';
   p.style.opacity = (Math.random() * 0.3).toString();
 
-  // Occasionally make them bone-colored, occasionally sage
+  // Red embers, occasional bone flecks
   const hue = Math.random();
-  if (hue > 0.8) p.style.background = '#7fa87f';
-  else if (hue > 0.95) p.style.background = '#b8853e';
+  if (hue > 0.75) p.style.background = '#8b0000';
+  else if (hue > 0.9) p.style.background = '#c8594a';
+  else if (hue > 0.95) p.style.background = '#c8b89a';
+  else p.style.background = '#5a1010';
 
   particleContainer.appendChild(p);
 }
